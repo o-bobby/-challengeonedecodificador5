@@ -1,0 +1,253 @@
+body {
+    min-height: 100vh;
+    background-color: #393f5f;
+    font-family: Orbitron,sans-serif;
+}
+
+                          /*Banner*/
+.banner {
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/787483579548860556/F26553012B7D0DD2F565696F846612EAF9C15223/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    background-color:#393f5f;
+    padding: 0 0 0 0;
+    max-height: 15vh;
+} 
+.bannerTitle {
+    color: #ffe69d;
+    padding:  15px 0 0 0;
+    text-transform: uppercase;
+    font-size: 3em;
+   
+}
+#titleFlexBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}     
+
+
+.audio {
+    height: 20px;
+    width: 15%;
+    margin: 0  0 2px 50px;
+   opacity: 35%;
+}
+       
+                     /*Input*/
+.inputBox {
+ display:flex;
+justify-content:left;
+ align-items:left;
+
+}    
+.inputMessage {
+    position:absolute;
+    border:none ;
+    outline: none;
+    resize: none;
+    margin:50px 25px 0 25px ;
+    background-color: #393f5f;
+    color: #ffe69d;
+    font-family: Orbitron, sans-serif;
+    text-align:center  ;
+    font-size: 15px;
+    
+   
+    
+  
+    
+}                 
+
+.inputMessage::placeholder {
+    padding:24% 0 0 0 ;
+    text-align: center;
+    font-size: 25px;
+    color: #ffe69d;
+    font-family: Orbitron, sans-serif;
+}
+
+                    /* Phrase */
+ .phraseBox {
+    position:absolute;
+    margin: 26% 22% 0 10.5%;
+}     
+.phrase {
+    color: #ffe69d;
+    font-family: Orbitron, sans-serif;
+    animation: lux 7s infinite;
+}
+
+               /*Keyframe phrase */
+@keyframes lux {
+    0% { color: #ff9760;}
+    10% { color: #ff9760;;}
+    15% {  color:#393f5f}
+    20% {  color:#393f5f}
+    25% { color:#ff9760;;}
+    35% { color:#ff9760;}
+    40% { color:#393f5f;}
+    45% { color:#393f5f;}
+    50% { color:#ff9760;;}
+    60% { color:#ff9760;}
+    65% { color:#393f5f;}
+    70% { color:#393f5f;}
+    75% { color:#ff9760;}
+    85% { color:#ff9760;}
+    90% { color:#393f5f;}
+    95% { color:#393f5f;}
+    100% {color:#ff9760;;}
+}
+
+
+                        /*Buttons encrypt and decrypt*/
+.buttonsBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    margin: 29% 15% 0 12.5% ;
+}                        
+.bntEncrypt {
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/787483579548860556/F26553012B7D0DD2F565696F846612EAF9C15223/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    font-family: Orbitron, sans-serif;
+    color: #ffe69d;
+    border-radius: 15px;
+    height: 35px;
+    width:150px ;
+    cursor: pointer;
+}
+
+.bntEncrypt:hover {
+    background-color: #ff9760 ;
+    color:#393f5f;
+    background-color: ;
+    transform:scaleX(1.1);
+    transition: 3ms;
+}
+
+.btnDecrypt {
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/787483579548860556/F26553012B7D0DD2F565696F846612EAF9C15223/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    color: #ffe69d;
+    font-family: Orbitron, sans-serif;
+    margin: 0  0 0 25px;
+    border-radius: 15px;
+    height: 35px;
+    width:150px ;
+    cursor: pointer;
+}
+
+.btnDecrypt:hover {
+    background-color: #ff9760 ;
+    color:#393f5f;
+    background-color: ;
+    transform:scaleX(1.1);
+    transition: 3ms;
+}
+
+                                /*Alert*/
+#alert {
+    
+    animation: lux 7s infinite;
+    margin: 0 25px 0 195px ;
+    color: #ff9760;
+}
+
+                         /*Output*/
+.outputBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    margin: 27px 0 0 0 ;
+   
+}    
+.outputMassage {
+    resize: none;
+    color:#ffe69d;
+    border: none;
+    outline: none;
+    margin:25px 25px 0 25px ;
+    background-color:  #393f5f;
+    font-family: Orbitron, sans-serif;
+    text-align: center;
+    
+
+    
+}  
+
+
+
+.outputMassage::placeholder {
+    padding: 25% 0 20% 0 ;
+    border-radius: 10px;
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/787483579548860556/F26553012B7D0DD2F565696F846612EAF9C15223/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    font-size: 25px;
+    text-align: center;
+    color: #ffe69d;
+    font-family: Orbitron, sans-serif;
+
+   
+    
+
+   
+    
+}
+
+
+                  /*Copy button*/
+
+.btnCopy {
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/787483579548860556/F26553012B7D0DD2F565696F846612EAF9C15223/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    font-family: Orbitron, sans-serif;
+    color: #ffe69d;
+    border-radius: 15px;
+    height: 35px;
+    width:150px ;
+    margin: 5% 0 0 39%;
+    cursor: pointer;
+}
+
+.btnCopy:hover {
+    background-color: #ff9760 ;
+    color:#393f5f;
+    background-color: ;
+    transform:scaleX(1.1);
+    transition: 3ms;
+}
+
+                
+              /*Footer*/
+
+.socialLink {
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+    margin: 8% 0 0 0 ;
+}     
+   
+
+ #copyright{
+    color: #ffe69d;
+    margin:  1% 0 0 5%;
+}
+#copyright:hover{
+    color:#ff9760;
+}
+ #gitHub {
+    width:26px;
+    margin: 50% 15% 0 2%;
+}     
+#gitHub:hover{
+    transform:scaleX(1.4);
+    transition: 3ms;
+
+}
+ #linkedIn {
+    width:25px;
+    margin: 50% 15% 0 90%;
+} 
+#linkedIn:hover{
+    transform:scaleX(1.4);
+    transition: 3ms;
+
+}

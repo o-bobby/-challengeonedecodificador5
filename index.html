@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypher Punk</title>
+    <link rel="icon" type="image/x-icon" href="image/screen.png">
+    <link rel="stylesheet" href="style/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css"> 
+    <script src="js/script.js"></script> 
+    </head>
+<body>
+                                       <!---Banner area-->
+     <header class="banner">
+        <h1 id="titleFlexBox" class="bannerTitle" >Cypher Punk</h1>
+        <audio class="audio" src="audio/dark-ambient-126122.mp3" autoplay controls loop ></audio>
+     </header>
+    
+                                          <!--Main area-->
+     <main>
+       
+                                          <!--Input section-->   
+        <section class="inputBox">
+                                        <!---Input message-->
+            <div class="inputMessage">
+              <textarea  id="input" cols="55" rows="15" class="inputMessage" placeholder="Digite seu texto" autofocus="true"  required  ></textarea>
+            </div>
+
+                                         <!--Phrase area-->
+            <div class="phraseBox">
+              <p class="phrase">&#9888; Apenas letras minúsculas e sem acento !</p>
+            </div>
+                                        <!--Buttons encrypt and decrypt-->
+            <div class="buttonsBox">
+                <div>
+                   <input  onclick="encrypt()"type="button" id="bnt1" value="Criptografar"  class="bntEncrypt">
+                </div>
+                <div>
+                   <input onclick="decrypt()"type="button" id="btn2" value="Descriptografar" class="btnDecrypt">
+                </div>
+            </div>
+        </section>
+                                            <!--Output section-->
+        <section class="outputBox">
+            <div >
+
+                <div id="alert">&nbsp;</div>
+                                           <!--Output message-->
+                <div>
+                    <textarea  id="output"    cols="70" rows="20" class="outputMassage"  placeholder="Nenhuma mensagem encontrada"   disabled ></textarea>
+                </div>
+                                           <!--Copy button--> 
+                <div>
+                    <input onclick="copy()"type="button" id="btn3" value="Copiar" class="btnCopy">
+                </div>                           
+            </div>
+        </section>     
+     </main>
+                                            <!--Footer-->
+     <footer>
+        <div >
+           
+            <div >
+                <ul class="socialLink">
+                    
+                    <li><a href="https://github.com/SilvaRobert"><img src="image/github-mark.png" alt="GitHub logo!" id="gitHub"></a></li>
+                    <li><a href="https://www.linkedin.com/in/robertsilvadeveloper/"><img src="image/linkedin.png" alt="LinkedIn logo!" id="linkedIn"></a></li>  
+                    <li id="copyright">&copy;Bob Silva</li> 
+                 </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
