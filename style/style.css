@@ -242,3 +242,21 @@ justify-content:space-around;
 
 }
 
+
+
+
+
+
+/*Resposivo*/
+
+@media only screen and (max-width: 768px) {
+    
+    .container {
+        display: block;
+        max-width: 100vh;
+        
+    }
+    
+}
+
+
