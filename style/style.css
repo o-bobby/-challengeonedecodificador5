@@ -6,7 +6,7 @@ body {
 
                           /*Banner*/
 .banner {
-    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/787483579548860556/F26553012B7D0DD2F565696F846612EAF9C15223/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+   background: #393f5f;
     max-height: 15vh;
   
 } 
