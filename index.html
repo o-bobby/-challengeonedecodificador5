@@ -9,55 +9,34 @@
     <link rel="stylesheet" href="style/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css"> 
-    <script src="js/script.js"></script> 
     </head>
 <body>
                                        <!---Banner area-->
-     <header class="banner">
-        <h1 id="titleFlexBox" class="bannerTitle" >Cypher Punk</h1>
+    <header class="banner">
+        <h1 class="main-title" >Cypher Punk</h1>
         <audio class="audio" src="audio/dark-ambient-126122.mp3" autoplay controls loop ></audio>
-     </header>
+    </header>
     
                                           <!--Main area-->
-     <main>
+    <main>
        
                                           <!--Input section-->   
-        <section class="inputBox">
+         <section class="inputBox">
                                         <!---Input message-->
             <div class="inputMessage">
               <textarea  id="input" oninput="this.value = this.value.replace(/[^a-z ]/g, '')" cols="55" rows="15" class="inputMessage" placeholder="Digite seu texto" autofocus="true"  required  ></textarea>
-            </div>
-
-                                         <!--Phrase area-->
-            <div class="phraseBox">
               <p class="phrase">&#9888; Apenas letras minúsculas e sem acento !</p>
+              <br>
+              <input  onclick="encrypt()"type="button" id="bnt1" value="Criptografar"  class="bntEncrypt">
+              <input onclick="decrypt()"type="button" id="btn2" value="Descriptografar" class="btnDecrypt">
             </div>
-                                        <!--Buttons encrypt and decrypt-->
-            <div class="buttonsBox">
-                <div>
-                   <input  onclick="encrypt()"type="button" id="bnt1" value="Criptografar"  class="bntEncrypt">
-                </div>
-                <div>
-                   <input onclick="decrypt()"type="button" id="btn2" value="Descriptografar" class="btnDecrypt">
-                </div>
-            </div>
-        </section>
-                                            <!--Output section-->
-        <section class="outputBox">
-            <div >
-
+              <div>
                 <div id="alert">&nbsp;</div>
-                                           <!--Output message-->
-                <div>
-                    <textarea  id="output"    cols="70" rows="20" class="outputMassage"  placeholder="Nenhuma mensagem encontrada"   disabled ></textarea>
-                </div>
-                                           <!--Copy button--> 
-                <div>
-                    <input onclick="copy()"type="button" id="btn3" value="Copiar" class="btnCopy">
-                </div>                           
-            </div>
-        </section>     
-     </main>
+                <textarea  id="output"    cols="70" rows="20" class="outputMassage"  placeholder="Nenhuma mensagem encontrada"   disabled ></textarea>   
+                <input onclick="copy()"type="button" id="btn3" value="Copiar" class="btnCopy">    
+              </div>
+         </section>
+    </main>
                                             <!--Footer-->
      <footer>
         <div >
@@ -72,7 +51,8 @@
             </div>
         </div>
     </footer>
-
+                                       <!--JavaScript-->
+    <script src="js/script.js"></script> 
 </body>
 
 </html>
