@@ -7,23 +7,19 @@ body {
                           /*Banner*/
 .banner {
     background-image: url(https://steamuserimages-a.akamaihd.net/ugc/787483579548860556/F26553012B7D0DD2F565696F846612EAF9C15223/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
-    background-color:#393f5f;
-    padding: 0 0 0 0;
     max-height: 15vh;
+  
 } 
-.bannerTitle {
+.main-title {
     color: #ffe69d;
     padding:  15px 0 0 0;
     text-transform: uppercase;
+    text-align: center;
     font-size: 3em;
    
 }
-#titleFlexBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}     
-
+   
+                                     /*Audio*/
 
 .audio {
     height: 20px;
@@ -35,12 +31,13 @@ body {
                      /*Input*/
 .inputBox {
  display:flex;
-justify-content:left;
- align-items:left;
+ flex-direction: row;
+justify-content:space-around;
+ 
 
 }    
 .inputMessage {
-    position:absolute;
+  
     border:none ;
     outline: none;
     resize: none;
@@ -58,7 +55,7 @@ justify-content:left;
 }                 
 
 .inputMessage::placeholder {
-    padding:24% 0 0 0 ;
+    padding:22% 0 0 0 ;
     text-align: center;
     font-size: 25px;
     color: #ffe69d;
@@ -66,10 +63,7 @@ justify-content:left;
 }
 
                     /* Phrase */
- .phraseBox {
-    position:absolute;
-    margin: 26% 22% 0 10.5%;
-}     
+   
 .phrase {
     color: #ffe69d;
     font-family: Orbitron, sans-serif;
@@ -143,15 +137,14 @@ justify-content:left;
     transition: 3ms;
 }
 
-                                /*Alert*/
+                             /*Alert*/
 #alert {
-    
     animation: lux 7s infinite;
-    margin: 0 25px 0 195px ;
+    margin: 25px 25px 0 195px ;
     color: #ff9760;
-}
-
-                         /*Output*/
+}                    
+                                
+                              /*Output*/
 .outputBox {
     display: flex;
     flex-direction: row;
@@ -185,11 +178,6 @@ justify-content:left;
     color: #ffe69d;
     font-family: Orbitron, sans-serif;
 
-   
-    
-
-   
-    
 }
 
 
@@ -202,7 +190,7 @@ justify-content:left;
     border-radius: 15px;
     height: 35px;
     width:150px ;
-    margin: 5% 0 0 39%;
+    margin: 2% 0 0 35%;
     cursor: pointer;
 }
 
@@ -251,3 +239,4 @@ justify-content:left;
     transition: 3ms;
 
 }
+
