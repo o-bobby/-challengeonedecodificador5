@@ -253,6 +253,9 @@ justify-content:space-around;
 
 
 @media  only  screen and (max-width: 768px) {
+    body {
+     overflow:auto;
+    } 
 
 .container {
         display: block;
