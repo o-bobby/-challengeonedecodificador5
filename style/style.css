@@ -250,14 +250,73 @@ justify-content:space-around;
 
 /*Resposivo*/
 
-@media only screen and (max-width: 768px) {
-    
-    .container {
+
+
+@media  only  screen and (max-width: 768px) {
+
+.container {
         display: block;
-        max-width: 100vh;
-        
-    }
-    
+    }  
+.outputMassage {
+    display: block;
+    width: 95%;
+    margin-left: 2vh ;
 }
+    
+.btnCopy {
+    margin:1vh  30vh;
+ }
+ .dev{
+    color: #ffe69d; 
+    margin-left:30vh; 
+  }
+  
+}
+
+
+
+@media only screen and (max-width: 390px) {
+
+.inputMessage {
+        display: block;
+        width: 85%;
+     }
+
+.outputMassage {
+        display: block;
+        width: 87%;
+        margin:0 0 0 25px ;
+}
+
+  
+
+     #alert {
+        margin: 55px 0 0 55px;
+     }
+          
+     .bntEncrypt {
+        margin: 15px 0 15px  35px   ;
+     }
+     .btnDecrypt {
+        margin: 15px 0 15px  35px   ;
+     }
+
+     .btnCopy {
+        margin:0 0 0  120px;
+     }
+     
+     .socialLink {
+        display: flex;
+        flex-direction: row;
+        
+     }
+
+     .dev{
+        color: #ffe69d; 
+        margin-left:12vh; 
+      }
+      
+  
+    }
 
 
