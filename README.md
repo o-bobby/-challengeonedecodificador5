@@ -1,6 +1,7 @@
 # Decodificador de Texto - Alura Challenges Oracle ONE
 
-## Challenge Oracle One Sprint 01: Desafio de Lógica de Programação.
+## Challenge ONE Sprint 01: Construa um decodificador de texto com Javascript
+
 ### Sobre o desafio
 - As letras: a, e, i, o, u, são convertidas na ordem por: <br> A letra "e" é convertida para "enter" <br> A letra "i" é convertida para "imes" <br> A letra "a" é convertida para "ai" <br> A letra "o" é convertida para "ober" <br> A letra "u" é convertida para "ufat"
 
