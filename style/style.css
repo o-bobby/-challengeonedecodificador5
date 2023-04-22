@@ -216,32 +216,32 @@ justify-content:space-around;
     margin: 5% 0 0 0 ;
 }     
    
+.socialLink {
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+    margin: 12% 4% 0 0 ;
+}     
+   
 
- #copyright{
-    color: #ffe69d;
-    margin:  1% 0 0 5%;
-}
-#copyright:hover{
-    color:#ff9760;
-}
+
  #gitHub {
     width:26px;
-    margin: 50% 15% 0 2%;
+    margin: 50% 13% 0 2%;
 }     
-#gitHub:hover{
-    transform:scaleX(1.4);
-    transition: 3ms;
 
-}
  #linkedIn {
     width:25px;
     margin: 50% 15% 0 90%;
 } 
-#linkedIn:hover{
-    transform:scaleX(1.4);
-    transition: 3ms;
 
+.dev{
+  color: #ffe69d; 
+  font-size: 13px;
+  margin-left:98vh; 
 }
+
 
 
 
