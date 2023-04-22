@@ -4,7 +4,7 @@ body {
     min-height: 100vh;
     background-color: #393f5f;
     font-family: Orbitron,sans-serif;
-    overflow-Y: hidden;
+    overflow-Y: auto;
 }
 
                           /*Banner*/
