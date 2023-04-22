@@ -4,7 +4,7 @@ body {
     min-height: 100vh;
     background-color: #393f5f;
     font-family: Orbitron,sans-serif;
-    overflow: hidden;
+    overflow-Y: hidden;
 }
 
                           /*Banner*/
@@ -239,7 +239,7 @@ justify-content:space-around;
 .dev{
   color: #ffe69d; 
   font-size: 13px;
-  margin-left:98vh; 
+  margin-left:90vh; 
 }
 
 
