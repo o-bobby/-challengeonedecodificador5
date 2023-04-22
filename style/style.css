@@ -16,7 +16,7 @@ body {
 } 
 .main-title {
     color: #ffe69d;
-    padding:  15px 0 0 0;
+    padding:  10px 0 0 0;
     text-transform: uppercase;
     text-align: center;
     font-size: 3em;
@@ -240,7 +240,7 @@ justify-content:space-around;
 .dev{
   color: #ffe69d; 
   font-size: 13px;
-  margin-left:90vh; 
+  margin-left:95vh; 
 }
 
 
