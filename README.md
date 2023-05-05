@@ -16,8 +16,5 @@
 - Funções anônimas;
 - Utilizar arrays;
 - Como manipular elementos do HTML5 pelo Document Object Model    (DOM);
-
-
--  https://obobsilva.github.io/-challengeonedecodificador5/
 - #challengeonedecodificador5
 
