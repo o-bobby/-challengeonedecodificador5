@@ -251,6 +251,17 @@ justify-content:space-around;
 
 /*Resposivo*/
 
+@media only screen  and (max-width: 1433px) {
+
+  .outputMassage {
+     max-width: 600px;
+     max-height: 350px;
+     margin-right: 155px;
+  }
+     
+}
+
+
 
 
 @media  only  screen and (max-width: 768px) {
