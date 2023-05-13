@@ -13,13 +13,14 @@ body {
     font-size: 2.5em;
 }
 
-.section-container, textarea, p {
+.section-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
+
 
 .encrypt {
     font-family: Orbitron,sans-serif;
@@ -107,16 +108,21 @@ a {
 
     /*-----------------                       Resposive               -------------------------*/
     
-    @media(min-width: 721px) and  (max-width: 1655px){
+    @media(min-width: 721px) and  (max-width: 1980px){
     
      .main-title {
         font-size: 4em;
         
+     
+      
+        
+        
      }
       
     .encrypt, .decrypt {
-       
+        
         width: 650px;
+        height: 150px;
 
     }
     .encrypt::placeholder, .decrypt::placeholder {
@@ -124,12 +130,14 @@ a {
     }
     .p1 {
         font-size: 1.5em;
+        margin-left: 63px;
     }
     .buttons {
         width: 250px;
+        height: 50px;
     }
     #btn1 {
-        margin-left: 75px;
+        margin-left: 86px;
     }
     
     #btn3 {
@@ -160,14 +168,47 @@ a {
     .main-title {
         font-size: 2.5em;
     }
+    
+    .section-container, textarea, p {
+    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
 
- 
+    .encrypt, .decrypt {
+        width: 350px;
+        height: 135px;
+        
+    }
+
+    .p1{
+        margin-left: 8px;
+    }
+
+    .buttons {
+       
+    }
+    #btn1 {
+        margin-left: 95px ;
+
+    }
+    #btn2 {
+        margin-left: 95px ;
+        
+    }
+    #btn3 {
+        margin-right: 105px ;
+        
+    }
+
  .footer-container {
     
       justify-content: space-evenly;
-      margin-right: 55px;
+      margin-right: 85px;
       margin-left: 55px;
-      margin-top: 20px;
+      margin-top: 35px;
     }
 }
 
