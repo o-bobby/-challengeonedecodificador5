@@ -4,55 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cypherpunk</title>
-    <link rel="icon" type="image/x-icon" href="image/screen.png">
     <link rel="stylesheet" href="style/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css"> 
-    </head>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="images/key.png">
+    <title>Cypherpunks</title>
+ 
+</head>
 <body>
-                                       <!---Banner area-->
-    <header class="banner">
-        <h1 class="main-title">Cypherpunk</h1>
+    <header class="header-container">
+        <h1 class="main-title">Cypherpunks</h1>
     </header>
-    
-                                          <!--Main area-->
     <main>
-       
-                                         
-         <section class="container">
-                                        <!---Input message-->
-            <div class="inputMessage">
-              <textarea  id="input" oninput="this.value = this.value.replace(/[^a-z ]/g, '')" cols="55" rows="15" class="inputMessage" placeholder="Digite seu texto" autofocus="true"  required  ></textarea>
-              <p class="phrase">&#9888; Apenas letras minúsculas e sem acento !</p>
-              <br>
-              <input  onclick="encrypt()"type="button" id="bnt1" value="Criptografar"  class="bntEncrypt">
-              <input onclick="decrypt()"type="button" id="btn2" value="Descriptografar" class="btnDecrypt">
-            </div>
-              <div>
-                <div id="alert">&nbsp;</div>
-                <textarea  id="output"    cols="70" rows="20" class="outputMassage"  placeholder="Nenhuma mensagem encontrada"   disabled ></textarea>   
-                <input onclick="copy()"type="button" id="btn3" value="Copiar" class="btnCopy">    
-              </div>
-         </section>
-    </main>
-                                            <!--Footer-->
-     <footer>
-        <div >
-           
+        <section class="section-container ">
             <div >
-                <ul class="socialLink">
-                    
-                    <li><a href="https://github.com/obobsilva"><img src="image/github-mark.png" alt="GitHub logo!" id="gitHub"></a></li>
-                    <li><a href="https://www.linkedin.com/in/robertsilvadeveloper/"><img src="image/linkedin.png" alt="LinkedIn logo!" id="linkedIn"></a></li>  
-                </ul>
-            </div>
-            <hr>
-             <div> <p class="dev">&copy; 2023 Bob Silva</p> </div>
-        </div>
-    </footer>
-                                       <!--JavaScript-->
-    <script src="js/script.js"></script> 
-</body>
+                <div>
+                    <textarea  oninput="this.value = this.value.replace(/[^a-z ]/g, '')" cols="35" rows="10" placeholder="Type your text here"  autofocus="true"   class="encrypt" required></textarea>
+                </div>
 
+                <div>
+                    <p class="p1">&#9888; Only lowercase  and  no accented letter</p>
+                </div>
+
+                <div>
+                    <input  onclick="encrypt()"  type="button" value="Encrypt" class="buttons" id="btn1">
+                    <input  onclick="decrypt()"  type="button" value="Decrypt" class="buttons" id="btn2">
+                </div>
+               
+            </div>
+        </section>
+
+        <section class="section-container ">  
+            <div >
+                <div>
+                    <textarea  cols="35" rows="10" placeholder="No message.Type something!" class="decrypt"></textarea>
+                </div>
+                <div>
+                    <input   onclick="copy()"  type="button" value="Copy" class="buttons" id="btn3">
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer class="footer-container">
+        <div class="github"><a href="https://github.com/o-bobby">GitHub</a></div>
+        <div class="linkedin"><a href="https://www.linkedin.com/in/robertsilvadeveloper/">LinkedIn</a></div>
+        <div class="developer">&copy; 2023 Bob Silva</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
 </html>

@@ -1,44 +1,32 @@
 
-   
-
-                       //Encrypting
+//Encrypting function
 function encrypt(){
-
-  let typingTxt = document.getElementById("input").value;
-
-  if (typingTxt!="") {
-    const encryptingTxt = typingTxt.split(/e/g).join("enter").split(/i/g).join("imes").split(/a/g).join("ai").split(/o/g).join("ober").split(/u/g).join("ufat");
-    document.getElementById("output").value = encryptingTxt;
-    document.getElementById("input").value = "";
-    document.getElementById("alert").innerHTML = "&nbsp";
-
-  }else {
-    document.getElementById("alert").innerText = "Digite ou Cole Algo Para Criptografar";   
+  let typingTxt = document.querySelector(".encrypt").value;
+  
+  if (typingTxt !=""){
+      const encryptingTxt = typingTxt.split(/e/g).join("enter").split(/i/g).join("imes").split(/a/g).join("ai").split(/o/g).join("ober").split(/u/g).join("ufat");
+      document.querySelector(".decrypt").value = encryptingTxt;
+      document.querySelector(".encrypt").value = "";
   }
 };
 
-                  //Decrypting
+//Decrypting function 
 function decrypt(){
-    
-    let pasteTxt = document.getElementById("input").value;
-                    
-    if (pasteTxt != "") {
-        const encryptingTxt = pasteTxt.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
-        document.getElementById("output").value = encryptingTxt;
-        document.getElementById("input").value = "";
-        document.getElementById("alert").innerHTML = "&nbsp";
-    } else {
-        document.getElementById("alert").innerText = "Digite ou Cole Algo Para Descriptografar";
-    }
+  let pasteTxt = document.querySelector(".encrypt").value;
+
+  if (pasteTxt !=""){
+      const encryptingTxt = pasteTxt.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
+      document.querySelector(".decrypt").value = encryptingTxt;
+      document.querySelector(".encrypt").value = "";
+  }
 };
- 
-             //Buttons
-async function copy() {
-	
-        let text = document.getElementById("output").value;
-        await navigator.clipboard.writeText(text);
-        document.getElementById("output").value = "";
-        document.getElementById("input").value = text;
-        document.getElementById("alert").innerHTML = "&nbsp";
-};             
+
+//Copy function
+async function copy(){
+
+  let outputText = document.querySelector(".decrypt").value;
+  await navigator.clipboard.writeText(outputText);
+  document.querySelector(".decrypt").value = "";
+  document.querySelector(".encrypt").value = outputText;
+};
 

@@ -1,340 +1,174 @@
-
-
 body {
-    min-height: 100vh;
-    background-color: #393f5f;
     font-family: Orbitron,sans-serif;
-    overflow-y: auto;
-    overflow-x: hidden;
+    background-color: #dedcdc;
 }
 
-                          /*Banner*/
-.banner {
-   background:#252525;
-    max-height: 15vh;
-  
-} 
+.header-container {
+    display: flex;
+    justify-content: center;
+    padding:35px;
+}
+
 .main-title {
-    color: #ffe69d;
-    padding:  10px 0 0 0;
-    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+.section-container, textarea, p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.encrypt {
+    font-family: Orbitron,sans-serif;
     text-align: center;
-    font-size: 3em;
-   
-}
-   
-                                     /*Audio*/
-
-.audio {
-    height: 20px;
-    width: 15%;
-    margin: 0  0 2px 50px;
-   opacity: 35%;
-}
-       
-                     /*Input*/
-.container {
- display:flex;
- flex-direction: row;
-justify-content:space-around;
- 
-
-}    
-.inputMessage {
-  
-    border:none ;
     outline: none;
+    border: none;
     resize: none;
-    margin:50px 25px 0 25px ;
-    background-color: #393f5f;
-    color: #ffe69d;
-    font-family: Orbitron, sans-serif;
-    text-align:center  ;
-    font-size: 15px;
-    
-   
-    
-  
-    
-}                 
+    margin-top: 5px;
+    background-color: #dedcdc;
+}
 
-.inputMessage::placeholder {
-    padding:22% 0 0 0 ;
+.encrypt::placeholder {
     text-align: center;
-    font-size: 25px;
-    color: #ffe69d;
-    font-family: Orbitron, sans-serif;
+    font-family: Orbitron,sans-serif;
+    font-size: 1.4em;
+    
 }
 
-                    /* Phrase */
-   
-.phrase {
-    color: #ffe69d;
-    font-family: Orbitron, sans-serif;
-    animation: lux 7s infinite;
+.p1 {
+    font-size: 15px;
+    margin-left: 5px;
 }
 
-               /*Keyframe phrase */
-@keyframes lux {
-    0% { color: #ff9760;}
-    10% { color: #ff9760;;}
-    15% {  color:#393f5f}
-    20% {  color:#393f5f}
-    25% { color:#ff9760;;}
-    35% { color:#ff9760;}
-    40% { color:#393f5f;}
-    45% { color:#393f5f;}
-    50% { color:#ff9760;;}
-    60% { color:#ff9760;}
-    65% { color:#393f5f;}
-    70% { color:#393f5f;}
-    75% { color:#ff9760;}
-    85% { color:#ff9760;}
-    90% { color:#393f5f;}
-    95% { color:#393f5f;}
-    100% {color:#ff9760;;}
-}
-
-
-                        /*Buttons encrypt and decrypt*/
-.buttonsBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: absolute;
-    margin: 29% 15% 0 12.5% ;
-}                        
-.bntEncrypt {
-    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/787483579548860556/F26553012B7D0DD2F565696F846612EAF9C15223/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
-    font-family: Orbitron, sans-serif;
-    color: #ffe69d;
-    border-radius: 15px;
+.buttons {
+    width: 150px;
     height: 35px;
-    width:150px ;
-    cursor: pointer;
-}
-
-.bntEncrypt:hover {
-    background-color: #ff9760 ;
-    color:#393f5f;
-    background-color: ;
-    transform:scaleX(1.1);
-    transition: 3ms;
-}
-
-.btnDecrypt {
-    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/787483579548860556/F26553012B7D0DD2F565696F846612EAF9C15223/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
-    color: #ffe69d;
-    font-family: Orbitron, sans-serif;
-    margin: 0  0 0 25px;
     border-radius: 15px;
-    height: 35px;
-    width:150px ;
-    cursor: pointer;
+    margin-top: 10px;
+    background-color: #5b5b5b  ;
+    font-size: 18px;
+    font-weight: bold;
+    color:#f5f5f6;
 }
 
-.btnDecrypt:hover {
-    background-color: #ff9760 ;
-    color:#393f5f;
-    background-color: ;
-    transform:scaleX(1.1);
-    transition: 3ms;
+.buttons:hover {
+    background-color: #000000;
+    transform: scaleY(1.2);
+    border: none;
+    cursor:pointer;
 }
 
-                             /*Alert*/
-#alert {
-    animation: lux 7s infinite;
-    margin: 25px 25px 0 195px ;
-    color: #ff9760;
-}                    
-                                
-                              /*Output*/
-.outputBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: right;
-    margin: 27px 0 0 0 ;
-   
-}    
-.outputMassage {
-    resize: none;
-    color:#ffe69d;
+#btn1 {
+    margin: 10px 0 0 18px ;
+}
+
+#btn2 {
+    margin: 10px 0 0  10px ;
+}
+
+.decrypt {
+    font-family: Orbitron,sans-serif;
+    text-align: center;
     border: none;
     outline: none;
-    margin:25px 25px 0 25px ;
-    background-color:  #393f5f;
-    font-family: Orbitron, sans-serif;
+    resize: none;
+    margin-top: 25px;
+    resize: none;
+    background-color: #dedcdc;
+}
+
+.decrypt::placeholder {
     text-align: center;
-    
-
-    
-}  
-
-
-
-.outputMassage::placeholder {
-    padding: 22% 0 19% 0 ;
-    border-radius: 10px;
-    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/787483579548860556/F26553012B7D0DD2F565696F846612EAF9C15223/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
-    font-size: 25px;
-    text-align: center;
-    color: #ffe69d;
-    font-family: Orbitron, sans-serif;
-
+    font-family: Orbitron,sans-serif;
+    font-size: 1.4em;
 }
 
 
-                  /*Copy button*/
-
-.btnCopy {
-    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/787483579548860556/F26553012B7D0DD2F565696F846612EAF9C15223/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
-    font-family: Orbitron, sans-serif;
-    color: #ffe69d;
-    border-radius: 15px;
-    height: 35px;
-    width:150px ;
-    margin: 2% 0 0 35%;
-    cursor: pointer;
+#btn3 {
+   margin: 10px 0 0  90px ;
+  
 }
-
-.btnCopy:hover {
-    background-color: #ff9760 ;
-    color:#393f5f;
-    background-color: ;
-    transform:scaleX(1.1);
-    transition: 3ms;
-}
-
-                
-              /*Footer*/
-
-.socialLink {
+.footer-container {
     display: flex;
-    flex-direction: row;
-    justify-content:center ;
-    align-items: center;
-    margin: 3% 0 0 0 ;
-}     
-   
-.socialLink {
-    display: flex;
-    flex-direction: row;
-    justify-content:center ;
-    align-items: center;
-    margin: 12% 4% 0 0 ;
-}     
-   
-
-
- #gitHub {
-    width:26px;
-    margin: 50% 13% 0 2%;
-}     
-
- #linkedIn {
-    width:25px;
-    margin: 50% 15% 0 90%;
-} 
-
-.dev{
-  color: #ffe69d; 
-  font-size: 13px;
-  margin-left:95vh; 
-}
-
-
-
-
-
-
-
-/*Resposivo*/
-
-@media only screen  and (max-width: 1433px) {
-
-  .outputMassage {
-     max-width: 600px;
-     max-height: 350px;
-     margin-right: 155px;
-  }
-     
-}
-
-
-
-
-@media  only  screen and (max-width: 768px) {
-    body {
-     overflow-y:auto;
-    } 
-
-.container {
-        display: block;
-    }  
-.outputMassage {
-    display: block;
-    width: 95%;
-    margin-left: 2vh ;
-}
-    
-.btnCopy {
-    margin:1vh  30vh;
- }
- .dev{
-    color: #ffe69d; 
-    margin-left:30vh; 
-  }
+    margin-top: 20px;
+    margin-left: 65px;
+    font-size: 13px;
   
 }
 
-
-
-@media only screen and (max-width: 390px) {
-    body {
-     overflow-y:auto;
-    }
-
-.inputMessage {
-        display: block;
-        width: 85%;
-     }
-
-.outputMassage {
-        display: block;
-        width: 87%;
-        margin:0 0 0 25px ;
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
-  
 
-     #alert {
-        margin: 55px 0 0 55px;
-     }
-          
-     .bntEncrypt {
-        margin: 15px 0 15px  35px   ;
-     }
-     .btnDecrypt {
-        margin: 15px 0 15px  35px   ;
-     }
-
-     .btnCopy {
-        margin:0 0 0  120px;
-     }
-     
-     .socialLink {
-        display: flex;
-        flex-direction: row;
+    /*-----------------                       Resposive               -------------------------*/
+    
+    @media(min-width: 721px) and  (max-width: 1655px){
+    
+     .main-title {
+        font-size: 4em;
         
      }
-
-     .dev{
-        color: #ffe69d; 
-        margin-left:11vh; 
-      }
       
-  
+    .encrypt, .decrypt {
+       
+        width: 650px;
+
     }
+    .encrypt::placeholder, .decrypt::placeholder {
+        font-size: 2.5rem;
+    }
+    .p1 {
+        font-size: 1.5em;
+    }
+    .buttons {
+        width: 250px;
+    }
+    #btn1 {
+        margin-left: 75px;
+    }
+    
+    #btn3 {
+       margin-left: 198px;
+    }
+
+   .footer-container {
+    justify-content: center;
+    margin-right: 70px;
+    margin-top: 25px;
+    
+     }
+     .github {
+        margin-right: 15px;
+     }
+     .linkedin {
+        margin-right: 15px;
+     }
+     
+    
+
+    
+}
+
+
+
+@media(min-width: 360px) and (max-width: 740px) {
+    .main-title {
+        font-size: 2.5em;
+    }
+
+ 
+ .footer-container {
+    
+      justify-content: space-evenly;
+      margin-right: 55px;
+      margin-left: 55px;
+      margin-top: 20px;
+    }
+}
 
 

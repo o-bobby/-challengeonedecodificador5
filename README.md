@@ -18,5 +18,3 @@
 - Como manipular elementos do HTML5 pelo Document Object Model    (DOM);
 - #challengeonedecodificador5
 
-https://user-images.githubusercontent.com/66528878/236573432-2684e670-eefc-43bc-9784-2a763ab0f8c5.mp4
-
